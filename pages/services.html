@@ -14,15 +14,15 @@
 <body>
     <header class="container-fluid sticky-top " >
         <div class="row h-100">
-            <div class="col-xl-2 col-4 align-self-center">
-                <a href="../index.html" ><img src="../assets/logos/plus45/plus45.svg" class="img-fluid" alt="plus45"></a>
+            <div class="col-xl-2 col-4 align-self-center logo">
+                <a href="../index.html" ><img src="../assets/logos/plus45/plus45.svg" class="img-fluid logo__img" alt="plus45"></a>
                 
             </div>
-            <nav class="col-xl-7 align-self-center d-none d-xl-block">                       
+            <nav class="col-xl-7 align-self-center d-none d-xl-block nav--principal">                       
                 <ul class="nav justify-content-evenly"> 
                     <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="../index.html">Inicio</a></button></li>
                     <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="./about.html">Nosotros</a></button></li>
-                    <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="./services.html">Servicios</a></button></li>
+                    <li class="nav-item"><button type="button" id="nav__actual" class="btn btn-outline-primary p-1"><a class="nav-link" href="./services.html">Servicios</a></button></li>
                     <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="./clients.html">Clientes</a></button></li>
                     <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="./contact.html">Contacto</a></button></li>
                 </ul>               
@@ -30,8 +30,8 @@
             <div class="col-xl-3 col-8">
                 <nav class="row"> 
                     <ul class=" nav flex-nowrap p-xl-3 p-2 nav justify-content-end">
-                        <li class="p-1 nav-item"> <a class="nav-link" href="./services.html"><img src="../assets/logos/crea/crea.svg" class="img-fluid" alt="crea tu web"></a></li>
-                        <li class="p-1 nav-item"> <a class="nav-link" href="../index.html"><img src="../assets/logos/usuario/usuario.svg" class="img-fluid" alt="usuario"></a></li>     
+                        <li class="p-1 nav-item logo-crea"> <a class="nav-link" href="./services.html"><img src="../assets/logos/crea/crea.svg" class="img-fluid logo-crea__img"  alt="crea tu web"></a></li>
+                        <li class="p-1 nav-item usuario"> <a class="nav-link" href="../index.html"><img src="../assets/logos/usuario/usuario.svg" class="img-fluid usuario__img" alt="usuario"></a></li>     
                     </ul>
                 </nav>
                 <div class="row" >
@@ -86,13 +86,13 @@
         
         <section class="row h-45 justify-content-center main-services__premium">
             <h2 class="py-3 col-12 text-center">Crea tu Web Premium</h2>
-            <Article class="p-4 col-xl-3 col-12 premium__article">
+            <Article class="p-4 col-xl-6 col-12 premium__article">
                 <h3 class="text-center">Tu Web Personalizada</h3>
                 <p class="p-2">¿Necesitas una página web única y profesional? Nuestro servicio premium te ofrece diseño personalizado, características avanzadas y soporte dedicado.</p>
                 <p class="p-2"> Desde tiendas en línea hasta portafolios y sitios corporativos, creamos la web que se adapta a tus necesidades. ¡Comienza hoy mismo!</p>
             </Article>
 
-            <div class=" col-xl-9 col-12 ">
+            <div class=" col-xl-6 col-12 ">
                 <div class="row  align-items-center premium__image" >                    
                     <div>
                         <img src="../assets/images/personalizada.webp" class="img-fluid mx-auto d-block" alt="web personalizada">
@@ -121,4 +121,4 @@
     <script src="../scripts/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
+</html>  

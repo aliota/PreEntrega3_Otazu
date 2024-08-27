@@ -40,7 +40,42 @@ h3{
 
 header {
     height: 75px;
-    background-color: $eden;   
+    background-color: $san-marino;   
+
+    .logo {
+        .logo__img{
+            transition: all 1s;
+        }
+        .logo__img:hover{
+            transform: scale(1.2,1.2) translate(5px,5px);
+        }
+    }
+
+    .logo-crea{
+        .logo-crea__img{
+            transition: all 1s;
+        }
+        .logo-crea__img:hover {
+            transform: scale(1.2,1.2) translate(-5px,5px) skewX(-10deg);
+        }
+    }
+      
+    .usuario{
+        .usuario__img{
+            transition: all 1s;
+        }
+        .usuario__img:hover {
+            transform: scale(1.4,1.4) translateY(5px);
+        }
+    } 
+      
+    #nav__actual{  
+        transform: scale(1.2,1.2);
+        background-color: #{$eden}6a !important;
+    }
+    #nav__actual:hover {
+        background-color: $bondi-blue !important;
+    }
     .btn-outline-primary {
         border-color: $blanco !important;       
     }
@@ -51,16 +86,17 @@ header {
         background-color: $bondi-blue !important;
     }
     
-    .nav-item {        
-        .nav-link{
-            color: $blanco !important; 
+    .nav--principal{
+        .nav-item {        
+            .nav-link{
+                color: $blanco !important; 
+            }
+            .nav-link:hover{       
+                background-color: $bondi-blue !important; 
+            }     
         }
-        .nav-link:hover{       
-            background-color: $bondi-blue !important; 
-        }     
     }
-   
-    
+         
     .dropdown-menu{
         .nav-item{
             background-color: $sinbad !important;
@@ -71,8 +107,8 @@ header {
     }
 }
 
-main {
-    background-color: $eden;     
+main {     
+    background-image:linear-gradient($san-marino,$eden);   
 }
 
 .main-index {         
@@ -127,8 +163,9 @@ main {
     }
 }
 
-.main-contacto { 
+.main-contacto {     
     form {
+        color: $eden !important;
         border: 2px solid $eden;
         border-radius: 5px;  
         .btn-primary {
@@ -144,6 +181,7 @@ main {
         }     
     }
     .info-contacto{
+        color: $eden !important;
         font-size: 0.8rem; 
     }    
 }
