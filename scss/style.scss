@@ -1,174 +1,160 @@
+
+
+/*Variables*/
+$bondi-blue: #0799b6;
+$san-marino: #047d96;
+$eden: #114c5f;
+$sinbad: #9cd2d3;
+$janna: #eed6b9;
+$blanco: #fdfdfd;
+$oscuro: #212529;
+
+/*Reset*/
 * {
     margin: 0px !important;
-    padding: 0px !important;
-    color:#114c5f ;
-}
-body{
-    background-color: #9cd2d3;
+    padding: 0px !important;    
 }
 
-header {
-    height: 90px;
-    background-color: #9cd2d3;
+/*Colores*/
+.bg-warning-subtle{
+    background-color: $sinbad !important;
 }
 
-main {
-    background-color: #0799b6;     
-}
 
-footer{
-    height: 90px;
-    font-size: 0.7rem;
-}
-
+/*Encabezados*/
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.7rem ;
+    color: $blanco;
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.3rem;
+    color: $blanco;
 }
 h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 10px !important;
 }
 
-.datos-contacto{
-    font-size: 0.5rem; 
-}
-form {
-    border: 2px solid rgb(7, 28, 120);
-    border-radius: 5px;
-}
-
-.main--flex {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-
-}
-
-.main--flex h1{
-    padding: 20px !important;
-}
-.main--flex section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-
-.main--flex section img {
-    width: 90vw;
-}
-
-.main--flex section article {
-    width: 90vw;
-    padding: 20px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+header {
+    height: 75px;
+    background-color: $eden;   
+    .btn-outline-primary {
+        border-color: $blanco !important;       
+    }
+    .btn-outline-primary:hover{
+        background-color: $bondi-blue !important;
+    }
+    .btn-outline-primary:active{
+        background-color: $bondi-blue !important;
+    }
+    
+    .nav-item {        
+        .nav-link{
+            color: $blanco !important; 
+        }
+        .nav-link:hover{       
+            background-color: $bondi-blue !important; 
+        }     
+    }
+   
+    
+    .dropdown-menu{
+        .nav-item{
+            background-color: $sinbad !important;
+            .nav-link {
+                color: $eden !important;     
+            }
+        }        
+    }
 }
 
-.main--flex section article p {
-    padding: 5px !important;
+main {
+    background-color: $eden;     
 }
 
-.main--grid {          
-    padding: 20px !important;
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    grid-template-columns: 333px 333px 333px ;
-    grid-template-rows: 1fr 222px 222px;
-    grid-template-areas:
-    "titulo titulo titulo"
-    "cliente-1 cliente-2 cliente-3"
-    "cliente-4 cliente-5 cliente-6"
-    ;
-    column-gap: 20px;
-    row-gap: 20px;
+.main-index {         
+    .main-index__free{        
+        color: $eden;
+        background-color: $sinbad;
+        .free__article{
+            height: 100%;            
+        }
+        .free__image{
+            background-color: $blanco;
+            height: 100%;            
+        }
+    }
+    .main-index__premium{      
+        color: $blanco; 
+        background-color: $san-marino;  
+        .premium__article{
+            height: 100%;           
+        }
+        .premium__image{
+            height: 100%;              
+        }
+    }
 }
 
-.main--grid h1 {
-    grid-area: titulo;    
+.main-about{
+    color: $blanco;
 }
 
-.cliente-1 {
-    grid-area: cliente-1;
+.main-services {       
+    .main-services__free{        
+        color: $eden; 
+        background-color: $sinbad;
+        .free__article{
+            height: 100%;            
+        }
+        .free__image{
+            background-color: $blanco;
+            height: 100%;            
+        }
+    }
+    .main-services__premium{       
+        color: $blanco; 
+        
+        .premium__article{
+            height: 100%;           
+        }
+        .premium__image{
+            height: 100%;              
+        }
+    }
 }
 
-.cliente-2 {
-    grid-area: cliente-2;
+.main-contacto { 
+    form {
+        border: 2px solid $eden;
+        border-radius: 5px;  
+        .btn-primary {
+            border-color: $eden !important;   
+            background-color: $san-marino;
+                
+        }
+        .btn-primary:hover{
+            background-color: $bondi-blue !important;
+        }
+        .btn-primary:active{
+            background-color: $bondi-blue !important;
+        }     
+    }
+    .info-contacto{
+        font-size: 0.8rem; 
+    }    
 }
 
-.cliente-3 {
-    grid-area: cliente-3;
-}
-.cliente-4 {
-    grid-area: cliente-4;
-}
-.cliente-5 {
-    grid-area: cliente-5;
-}
-.cliente-6 {
-    grid-area: cliente-6;
+footer{
+    height: 90px;
+    font-size: 0.8rem;
+    color: $blanco;
+    background-color: $eden; 
 }
 
-.main--grid section {
-    background-color: aqua;
-}
 
-.main--services {
-    padding: 30px !important;
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    grid-template-columns: 90vw;
-    grid-template-rows: 60px 370px 60px 300px;
-    grid-template-areas:
-    "titulo-free"
-    "free"
-    "titulo-premium"
-    "premium"
-    ;    
-}
 
-.main--services h2{
-    padding: 20px !important;
-}
 
-.main--services p {
-    padding: 10px !important;
-}
-
-.titulo-free{
-    grid-area: titulo-free;
-}
-
-.free{
-    grid-area: free;
-    background-color: rgb(248, 202, 208);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-    justify-content:center;
-    align-items:start;
-
-}
-
-.titulo-premium{
-    grid-area: titulo-premium;
-}
-
-.premium{
-    grid-area: premium;
-    background-color: rgb(241, 232, 206);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:center;
-    align-items: start;
-}

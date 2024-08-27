@@ -59,19 +59,19 @@
        <g class="com.sun.star.drawing.LineShape">
         <g id="id3">
          <rect class="BoundingBox" stroke="none" fill="none" x="39" y="39" width="583" height="83"/>
-         <path fill="none" stroke="rgb(0,0,0)" stroke-width="81" stroke-linejoin="miter" stroke-linecap="round" d="M 80,80 L 580,80"/>
+         <path fill="none" stroke="rgb(253,253,253)" stroke-width="81" stroke-linejoin="miter" stroke-linecap="round" d="M 80,80 L 580,80"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.LineShape">
         <g id="id4">
          <rect class="BoundingBox" stroke="none" fill="none" x="39" y="229" width="583" height="83"/>
-         <path fill="none" stroke="rgb(0,0,0)" stroke-width="81" stroke-linejoin="round" stroke-linecap="round" d="M 80,270 L 580,270"/>
+         <path fill="none" stroke="rgb(253,253,253)" stroke-width="81" stroke-linejoin="round" stroke-linecap="round" d="M 80,270 L 580,270"/>
         </g>
        </g>
        <g class="com.sun.star.drawing.LineShape">
         <g id="id5">
          <rect class="BoundingBox" stroke="none" fill="none" x="39" y="419" width="583" height="83"/>
-         <path fill="none" stroke="rgb(0,0,0)" stroke-width="81" stroke-linejoin="round" stroke-linecap="round" d="M 80,460 L 580,460"/>
+         <path fill="none" stroke="rgb(253,253,253)" stroke-width="81" stroke-linejoin="round" stroke-linecap="round" d="M 80,460 L 580,460"/>
         </g>
        </g>
       </g>
